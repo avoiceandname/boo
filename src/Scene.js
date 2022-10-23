@@ -9,21 +9,12 @@ export default function Scene({ ...props }) {
   const { nodes, materials } = useSpline('https://prod.spline.design/onqcmD8YHwAOjmzH/scene.splinecode')
   return (
     <>
-      <color attach="background" args={['#4b4d52']} />
+      <color attach="background" args={['#5d238e']} />
       <group {...props} dispose={null}>
         <mesh
-          name="Shape"
-          geometry={nodes.Shape.geometry}
-          material={materials['Shape Material']}
-          castShadow
-          receiveShadow
-          position={[-24.8, 68.29, -148.14]}
-          rotation={[0.23, 0.91, -0.17]}
-        />
-        <mesh
-          name="Star 2"
-          geometry={nodes['Star 2'].geometry}
-          material={materials['Star 2 Material']}
+          name="Star 3"
+          geometry={nodes['Star 3'].geometry}
+          material={materials['Star 3 Material']}
           castShadow
           receiveShadow
           position={[557.73, 224.71, -14.7]}
@@ -31,19 +22,9 @@ export default function Scene({ ...props }) {
           scale={1.41}
         />
         <mesh
-          name="Star"
-          geometry={nodes.Star.geometry}
-          material={materials['Star Material']}
-          castShadow
-          receiveShadow
-          position={[-385.05, 170.6, 251.37]}
-          rotation={[0.11, 0.87, 1.21]}
-          scale={1.41}
-        />
-        <mesh
-          name="Star 21"
-          geometry={nodes['Star 21'].geometry}
-          material={materials['Star 21 Material']}
+          name="Star 2"
+          geometry={nodes['Star 2'].geometry}
+          material={materials['Star 2 Material']}
           castShadow
           receiveShadow
           position={[526.91, -224.7, -415.9]}
@@ -51,9 +32,9 @@ export default function Scene({ ...props }) {
           scale={1}
         />
         <mesh
-          name="Star1"
-          geometry={nodes.Star1.geometry}
-          material={materials['Star1 Material']}
+          name="Star4"
+          geometry={nodes.Star4.geometry}
+          material={materials['Star4 Material']}
           castShadow
           receiveShadow
           position={[-269.04, 335.94, -163.17]}
@@ -61,27 +42,17 @@ export default function Scene({ ...props }) {
           scale={1}
         />
         <mesh
-          name="Merged Geometry"
-          geometry={nodes['Merged Geometry'].geometry}
+          name="Eyes"
+          geometry={nodes.Eyes.geometry}
           material={materials.eyeball}
           castShadow
           receiveShadow
           position={[2.58, 41.18, 68.11]}
         />
         <mesh
-          name="Sphere 4"
-          geometry={nodes['Sphere 4'].geometry}
-          material={materials['Sphere 4 Material']}
-          castShadow
-          receiveShadow
-          position={[-198.48, -271.25, 193.46]}
-          rotation={[-0.17, 1.31, 0.17]}
-          scale={1}
-        />
-        <mesh
-          name="Sphere 3"
-          geometry={nodes['Sphere 3'].geometry}
-          material={materials['Sphere 3 Material']}
+          name="Dot"
+          geometry={nodes.Dot.geometry}
+          material={materials['Dot Material']}
           castShadow
           receiveShadow
           position={[-358.79, 551.32, -289.73]}
@@ -89,46 +60,19 @@ export default function Scene({ ...props }) {
           scale={1}
         />
         <mesh
-          name="Sphere 2"
-          geometry={nodes['Sphere 2'].geometry}
-          material={materials.Moon}
+          name="Moon"
+          geometry={nodes.Moon.geometry}
+          material={materials.Celestial}
           castShadow
           receiveShadow
           position={[-131.83, 433.33, -696.76]}
           rotation={[-0.17, 1.31, 0.17]}
           scale={1}
         />
-        <pointLight
-          name="Point Light 2"
-          castShadow
-          intensity={2.98}
-          decay={8}
-          distance={4488}
-          shadow-mapSize-width={1024}
-          shadow-mapSize-height={1024}
-          shadow-camera-near={100}
-          shadow-camera-far={100000}
-          color="#f2b726"
-          position={[526.39, 327.49, -74.44]}
-          scale={[-1, 1, 1]}
-        />
-        <pointLight
-          name="Point Light"
-          castShadow
-          intensity={2.43}
-          decay={8}
-          distance={4488}
-          shadow-mapSize-width={1024}
-          shadow-mapSize-height={1024}
-          shadow-camera-near={100}
-          shadow-camera-far={100000}
-          position={[1, 35.52, -45.12]}
-          scale={[-1, 1, 1]}
-        />
         <group name="Hat" position={[9.16, 135.87, -107.28]} rotation={[0.02, 0, 0]} scale={1}>
           <mesh
-            name="Ellipse"
-            geometry={nodes.Ellipse.geometry}
+            name="Strap"
+            geometry={nodes.Strap.geometry}
             material={materials.hat}
             castShadow
             receiveShadow
@@ -137,8 +81,8 @@ export default function Scene({ ...props }) {
             scale={1}
           />
           <mesh
-            name="Cone"
-            geometry={nodes.Cone.geometry}
+            name="Hat cone"
+            geometry={nodes['Hat cone'].geometry}
             material={materials.hat}
             castShadow
             receiveShadow
@@ -147,9 +91,9 @@ export default function Scene({ ...props }) {
             scale={1.28}
           />
           <mesh
-            name="Ellipse1"
-            geometry={nodes.Ellipse1.geometry}
-            material={materials['Ellipse1 Material']}
+            name="Brim"
+            geometry={nodes.Brim.geometry}
+            material={materials.hat}
             castShadow
             receiveShadow
             position={[0, -88.9, 58.3]}
@@ -158,19 +102,9 @@ export default function Scene({ ...props }) {
           />
         </group>
         <mesh
-          name="BG"
-          geometry={nodes.BG.geometry}
-          material={materials['BG Material']}
-          castShadow
-          receiveShadow
-          position={[-533.81, 7.66, -273.21]}
-          rotation={[-0.16, 1.31, 0.16]}
-          scale={1}
-        />
-        <mesh
-          name="Sphere"
-          geometry={nodes.Sphere.geometry}
-          material={materials['Sphere Material']}
+          name="Ghost"
+          geometry={nodes.Ghost.geometry}
+          material={materials['Ghost Material']}
           castShadow
           receiveShadow
           position={[0, -18.79, -27.03]}
@@ -192,11 +126,11 @@ export default function Scene({ ...props }) {
         <OrthographicCamera
           name="1"
           makeDefault={true}
-          zoom={0.9}
+          zoom={1.36}
           far={100000}
           near={-100000}
-          position={[716.08, 135.14, 856.12]}
-          rotation={[-0.15, 0.66, 0.09]}
+          position={[853.05, 26.52, 713.24]}
+          rotation={[-0.1, 0.86, 0.08]}
           scale={1}
         />
         <hemisphereLight name="Default Ambient Light" intensity={0.75} color="#eaeaea" />
