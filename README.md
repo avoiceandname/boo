@@ -1,1 +1,1 @@
-# 👻 check it out at boo.km.design
+# 👻 boo.km.design
